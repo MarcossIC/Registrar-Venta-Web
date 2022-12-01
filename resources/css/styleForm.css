@@ -1,0 +1,120 @@
+/*GENERIC*/
+label{
+
+    font-weight: 500;
+    padding-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    color: #ffff;
+}
+
+button{
+    margin-right: 50px;
+    height: 35px;
+}
+
+/*FORM HEADER*/
+.form-header{
+    padding: 0px;
+    border-bottom: 1px solid rgba(30, 35, 43, 0.904);
+}
+.form-header h3{
+    text-align: center;
+    font-size: 25px;
+}
+/*FORM BODY*/
+.form-body{
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 10px;
+}
+.form-body .group{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-bottom: 32px;
+}
+.group{
+    display: flex;  
+}
+
+/*lISTA*/
+/*INPUTS*/
+input[type="number"], input[type="text"], input[type="date"] {
+    font-size: 18px;
+    height: 34px;
+    font-size: 16px;
+    color: #f3f3f3da;
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #1c2631;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+input[type="number"]:focus, input[type="text"]:focus, input[type="date"]:focus {
+    outline: none;
+    border-bottom: 2px solid #233549;
+}
+.form-body .group .input-id{
+    margin-left: 24px;
+}
+.form-body .group .input-quantity{
+    margin-left: -3px;
+}
+.form-body .group .input-name{
+    margin-left: 5px;
+}
+.form-body .group .input-date{
+    margin-left: 17px;
+}
+.form-body .group .input-cost{
+    margin-left: 18px;
+}
+
+/*LABEL*/
+.form-body .group label {
+
+    transition: all 0.3s ease;
+    font-size: 18px;
+    line-height: 16px;
+    margin-left: 15px;
+    top: 16px;
+    left: 0;
+    right: 20px;
+}
+
+.form-body .group label:before {
+    border-radius: 3px;
+  }
+/*BUTTONS*/
+
+.generic-button {
+	box-shadow: 0px 0px 2px -1px #313463;
+	background:linear-gradient(to bottom, #242f6b 5%, #19254b 100%);
+
+	border-radius: 4px;
+	cursor: pointer;
+	color: #ffffffda;
+    font-weight: bold;
+	font-size: 17px;
+    margin-left: 23px;
+    margin-top: 10px;
+	padding: 10px 24px;
+	text-shadow: 1px 1px 5px #000000;
+    transition: all 0.3s ease;
+}
+.generic-button:hover {
+	background:linear-gradient(to bottom, #1a264b 5%, #1f2962 100%);
+    text-shadow: -1px -1px 4px #000000;
+}
+.generic-button:active {
+	position:relative;
+	top:1px;
+}

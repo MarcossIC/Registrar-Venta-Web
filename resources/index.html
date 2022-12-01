@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Formulario Producto</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script type="module" src="./scripts/send.js" defer></script>
+  <script type="module" src="./scripts/changeSection.js" defer></script>
+  <script type="module" src="./scripts/saveProduct.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  
+  <!-- MENU VERTICAL -->
+  <nav class="navbar">
+    <div class="navbar-strip">
+      <div class="navbar-container">
+        <div class="navbar-grid" style="
+        will-change: auto; translate: none; rotate: none;
+        scale: none; opacity: 1;transform: translate(0px, 0px);">
+          <div class="navbar-col -left">
+            <div class="navbar-navs">
+              <a class="navbar-nav" style="padding-right: 20px;" href="#" id="agree">Agregar Producto</a>
+              <a class="navbar-nav" style="padding-left: 20px;" href="#" id="view">Mostrar Producto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+                 
+  <!-- SECTION AGREGAR PRODUCTO -->
+  <section class="section-view" id="section-agree">
+    <div class="layout" role="main" data-scroll-damping="0.05" data-scrollbar="true" tabindex="-1" style="outline: none;">
+      <div class="content" style="transform: translate3d(0px, 0px, 0px);">
+        <div class="wrap">
+          <form id="form" method="post">
+            <div class="form-header">
+              <h3 class="header-title">Producto</h3>
+            </div>
+            <div class="form-body">
+              <ul>
+                <li class="group">
+                  <label class="label-id" for="product-id">ID venta</label><br />
+                  <input type="number" class="input-id" id="product-id" name="product-id" required />
+                </li>
+                <li class="group">
+                  <label class="label-date" for="sale-date">Fecha</label><br />
+                  <input type="date" class="input-date" id="sale-date" name="sale-date" required />
+                </li>
+                <li class="group">
+                  <label for="product-name">Nombre</label><br />
+                  <input type="text" class="input-name" id="product-name" name="product-name"
+                    placeholder="Escribe un producto" required />
+                </li>
+                <li class="group">
+                  <label for="quantity">Cantidad</label><br />
+                  <input type="number" max="1000" class="input-quantity" id="quantity" name="quantity" placeholder="Cantidad comprada"
+                    required />
+                </li>
+                <li class="group">
+                  <label for="cost">Precio</label><br />
+                  <input type="text" class="input-cost" id="cost" name="cost" placeholder="Precio Unitario" required />
+                </li>
+                <li class="group">
+                  <div style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; will-change: auto; transform: translate(0px, 0px); opacity: 1;">
+                    <button type="reset" class="generic-button button-form">
+                      <span class="button-form-text">
+                        Limpiar 
+                      </span>
+                    </button>
+                    <button type="submit" class="generic-button button-form" id="request">
+                      <span class="button-form-text">
+                        Guardar
+                      </span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <p>Ultimo producto</p>
+            </tr>
+            <tr>
+              <td>ID</td><td>Nombre</td><td>Fecha</td><td>Coste</td><td>Cantidad</td><td>Total</td>
+            </tr>
+          </thead>
+          <tbody id="last-tbody"></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION MOSTRAR PRODUCTOS -->
+  <section class="section-table" id="section-view">
+    <div class="wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <p>Productos</p>
+          </tr>
+          <tr>
+            <td>ID</td><td>Nombre</td><td>Fecha</td><td>Coste</td><td>Cantidad</td>
+          </tr>
+        </thead>
+        <tbody id="all-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+</body>
+
+</html>
