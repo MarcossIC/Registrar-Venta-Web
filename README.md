@@ -3,5 +3,5 @@ This repository contains the final Web Programming project done in the EPET N4. 
 
 ## 🛠 Stack
 <p user-select="none" align="left">
-   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html,css,js,php"/> </a>
+   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html,css,js,php,mysql"/> </a>
 </p>
