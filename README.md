@@ -1,4 +1,7 @@
-# Registrar-Venta-Web
-Este repositorio contiene el proyecto final presentado para programacion Web en la EPET 4.
+# Register Web Sales
+This repository contains the final Web Programming project done in the EPET N4. It is an API + a simple frontend made with vanilla stacks
 
-Es una API echa en PHP que se conecta a una base de datos MySQL, y envia datos en front echo con JS vanilla con fetch. Muestra una vista echa en HTML y CSS.
+## 🛠 Stack
+<p user-select="none" align="left">
+   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html,css,js,php"/> </a>
+</p>
